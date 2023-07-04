@@ -15,9 +15,7 @@ body {
 .container {
   max-width: 64rem;
   margin: 0% auto;
-
-  /* padding: 0% 5rem; */
-}
+ }
 .nav-item .active {
   border-radius: 6px;
   background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
@@ -39,6 +37,7 @@ body {
 a.navbar-brand {
   color: #454545;
 }
+
 /* -------------------------- */
 /* hero-part-1 */
 /* -------------------------- */
@@ -201,7 +200,7 @@ a.navbar-brand {
 }
 .heading-secondary {
   font-size: 3.2rem;
-  line-height: 0.6;
+  line-height: 1;
   margin-bottom: 6.6rem;
   font-weight: 700;
   color: #333;
@@ -215,6 +214,7 @@ a.navbar-brand {
 .grid {
   display: grid;
   gap: 4.8rem;
+  margin-bottom: 7.8rem;
 }
 .bottom {
   margin-bottom: 5rem;
@@ -242,7 +242,9 @@ a.navbar-brand {
   background-color: #fae5d3;
   z-index: -1;
 }
-
+.grid:last-child{
+  margin: 0;
+}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -252,6 +254,10 @@ a.navbar-brand {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 
 /* -------------------------- */
 /* Section-meal */
@@ -376,6 +382,11 @@ a.navbar-brand {
   color: #e67e22;
   border-bottom: 1px solid transparent;
 }
+
+/* -------------------------- */
+/* Section-testmonials */
+/* -------------------------- */
+
 .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
@@ -410,9 +421,9 @@ a.navbar-brand {
 }
 .gallery{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
- gap: 1rem;
-padding: 1rem;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
 .gallery-item{
   overflow: hidden;
@@ -425,6 +436,81 @@ padding: 1rem;
 .gallery-item img:hover{
   transform: scale(1.1);
 }
+
+/* -------------------------- */
+/* Section-pricing */
+/* -------------------------- */
+
+
+.section-pricing {
+  padding: 6rem 0;
+}
+.pricing-plan{
+ width: 85%;
+  border-radius: 11px;
+}
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 3.8rem;
+}
+.pricing-plan--complete{
+  background-color: #fdf2e9;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+ 
+
+}
+.pricing-plan--complete::after{
+  content: "Best value";
+  position: absolute;
+  top: 4%;
+  right: -11%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
+  transform: rotate(45deg);
+}
+.plan-header{
+  text-align: center ;
+  margin-bottom: 2.8rem;
+}
+.plan-name{
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 1rem;
+}
+.plan-price{
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.plan-price span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 0.3rem;
+}
+.plan-text{
+  font-size: 1.3rem;
+  line-height: 1.1;
+  color: #6f6f6f;
+}
+.plan-sing-up{
+  text-align: center;
+  margin-top: 2.8rem;
+}
+
+
 /* @media screen and (max-width: 600px) {
   .container-2 {
     flex-direction: column;
