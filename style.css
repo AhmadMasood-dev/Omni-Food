@@ -13,7 +13,7 @@ body {
   color: #555;
 }
 .container {
-  max-width: 64rem;
+  max-width: 120rem;
   margin: 0% auto;
  }
 .nav-item .active {
@@ -545,14 +545,47 @@ row-gap: 9.6rem;
   padding: 0.8rem;
   border-radius: 50%;
 }
-/* @media screen and (max-width: 600px) {
-  .container-2 {
-    flex-direction: column;
+ /* -------------------------- */
+/* Section-call to action */
+/* -------------------------- */
 
-    margin-left: 10px;
-  }
+.section-cta {
+  padding: 6rem 0;
+}
+.cta{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  height: 50rem;
+  overflow: hidden;
+}
+.cta-text-box{
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #2e1907;
 
-  img {
-    margin-bottom: 10px;
-  }
-} */
+}
+.cta .heading-secondary{
+  color: #2e1907;
+  margin-bottom: 3rem;
+}
+.cta-text{
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+   
+}
+.cta-img-box{
+  background-image: linear-gradient( to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35) ), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:3.2rem ;
+  row-gap:2.3rem  ;
+
+}
