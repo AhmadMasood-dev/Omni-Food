@@ -69,6 +69,7 @@ a.navbar-brand {
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
+.btnn,  
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -78,6 +79,10 @@ a.navbar-brand {
   border-radius: 9px;
   transition: all 1s;
   font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -360,6 +365,12 @@ a.navbar-brand {
 .margin-right-md {
   margin-bottom: 4.8rem !important;
 }
+*:focus{
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(231, 127, 35, 0.5);
+}
 .center-text {
   text-align: center;
 }
@@ -559,16 +570,17 @@ row-gap: 9.6rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
-  height: 50rem;
+
   overflow: hidden;
 }
 .cta-text-box{
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #2e1907;
+  color: #45260a;
 
 }
 .cta .heading-secondary{
-  color: #2e1907;
+  /* color: #45260a; */
+  color: inherit;
   margin-bottom: 3rem;
 }
 .cta-text{
@@ -588,4 +600,42 @@ row-gap: 9.6rem;
   column-gap:3.2rem ;
   row-gap:2.3rem  ;
 
+}
+.btnn--form{
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: self-end;
+
+}
+.btnn--form:hover{
+  background-color: #fff;
+  color: #555;
+  
+
+}
+.cta-form label{
+display: block;
+font-size: 1.2rem;
+font-weight: 500;
+margin-bottom: 1rem;
+}
+.cta-form input,
+.cta-form select{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder{
+  color: #aaa;
+}
+.cta *:focus{
+  outline: none;
+ 
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.507) ;
 }
