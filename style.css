@@ -260,6 +260,9 @@ a.navbar-brand {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 
 
 /* -------------------------- */
@@ -638,4 +641,72 @@ margin-bottom: 1rem;
   outline: none;
  
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.507) ;
+}
+ /* -------------------------- */
+/* Section-Footer */
+/* -------------------------- */
+
+.footer {
+  padding: 6rem 0;
+}
+.gridfooter{
+  display: grid;
+  column-gap: 3.5rem;
+  row-gap: 9.6rem;
+}
+.footer-logo{
+  display: block;
+  margin-bottom: 2.2rem;
+
+}
+.social-icon{
+  height: 2rem;
+  width: 2rem;
+}
+.social-links{
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-left: -2rem;
+ }
+ .copyright{
+  font-size: 1.1rem;
+line-height: 1.6;
+color: #767676;
+margin-top: auto;
+ }
+ .logo-col{
+  display: flex;
+  flex-direction: column;
+ }
+.footer-heading{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+}
+.contact{
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.address{
+  margin-bottom: 2.2rem;
+}
+.footer-nav{
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 1.4rem;
+
+}
+.footer-links:link,
+.footer-links:visited{
+text-decoration: none;
+font-size: 1.1rem;
+color: #767676;
+transition: all 0.9s;
+}
+.footer-links:hover,
+.footer-links:active{
+color: #555;
 }
