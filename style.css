@@ -564,7 +564,7 @@ row-gap: 9.6rem;
 /* -------------------------- */
 
 .section-cta {
-  padding: 6rem 0;
+  padding: 6.8rem 0;
 }
 .cta{
   display: grid;
@@ -647,12 +647,16 @@ margin-bottom: 1rem;
 /* -------------------------- */
 
 .footer {
-  padding: 6rem 0;
+  padding: 9.6rem 0 12rem 0;
+  border-top:1px solid #eee;
 }
 .gridfooter{
   display: grid;
-  column-gap: 3.5rem;
+  column-gap: 3rem;
   row-gap: 9.6rem;
+}
+.grid--footer{
+  grid-template-columns: 2.5fr 2fr 1.5fr 1.5fr 1fr;
 }
 .footer-logo{
   display: block;
@@ -697,7 +701,7 @@ list-style: none;
 display: flex;
 flex-direction: column;
 gap: 1.4rem;
-
+margin-left: -2rem;
 }
 .footer-links:link,
 .footer-links:visited{
